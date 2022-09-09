@@ -301,9 +301,15 @@
 
         <div>
           <p class="sign-up">Підпишіться на розсилку</p>
-          <form>
-            <label for="mail">
-              <input class="input-styles" type="email" name="mail" id="mail" placeholder="E-mail" />
+          <form class="footer-form">
+            <label class="footer-form-field">
+              <input
+                class="input-styles"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
             </label>
             <button type="submit" class="sign-up-btn">
               <span class="sign-up-text">Підписатися</span>
